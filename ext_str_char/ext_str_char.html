@@ -1,0 +1,35 @@
+<!-- Extracting String Characters
+There are 3 methods for extracting string characters:
+
+charAt(position)
+charCodeAt(position)
+Property access [ ] -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+<h2>The charAt() Method</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="test1"></p>
+<p id="test2"></p>
+
+<script>
+var text = "HELLO WORLD";
+document.getElementById("test1").innerHTML = text.charAt(6);
+document.getElementById("test2").innerHTML = text.charCodeAt(6);
+
+// JavaScript String charCodeAt(5)
+// The charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+// The method returns a UTF-16 code (an integer between 0 and 65535).
+
+
+</script>
+
+</body>
+</html>

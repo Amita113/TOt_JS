@@ -1,0 +1,22 @@
+scope chain and lexical environment
+
+scope as a boundary till where we can access variables
+
+lexical heirarichy , nested things fun1(fun2())
+function func1()
+{
+    lexical enviroment  will be created
+    function func2()
+{
+    lexical enviroment  will be created
+    
+}
+}
+finding varibles in nested functions is called scope chain
+
+inverse lexical scope does not work var declared in  and 
+inner function and consloe in outer scope then it does not
+work
+
+
+A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function. Closure helps in binding a function to its outer boundary and is created automatically whenever a function is created.

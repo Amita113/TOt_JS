@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call apply bind</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let person={
+            fName:"Sachin",
+            lName:"Tendulkar",
+            fullName: function (hometown,country){
+               return this.fName + " " + this.lName + " "+ hometown +" "+ country
+            }
+        }
+        // let person1={
+        //     fName:"virat",
+        //     lName:"kohili",
+        //     fullName: function (){
+        //        return this.fName + " " + this.lName
+        //     }
+        // }
+
+        // if we have many objects we can repeat , if we 
+        // repeat is not a good approach, 
+
+        // so we got emerged with call method through which we can 
+        // use the method of other object in our current object
+        let person1={
+            fName:"virat",
+            lName:"kohli"
+        }
+
+        // so where is our fullName method we have it inour person object
+
+        // call method can accept any number of arguments but first arg will be object
+        // which should be the this object it means which should render
+        person.fullName.call(person1)
+        console.log(person.fullName.call(person1))
+        // call method gives a power to use method from one object in other
+        
+        //eg we have a parameter, hometown -- underfined
+        // call method gives power to pass parameters  --- as second parameters
+
+        console.log(person.fullName.call(person1,"pune","India"))
+        
+        // apply method allows us to pass arguments as an array
+        // apply and call are almost same 
+        console.log(person.fullName.apply(person1,["pune","India"]))
+        
+        // bind is same as call
+        // call method invokes quickly but bind  function invokes immediately
+        
+        //but bind method will bind our method to the function here fullName and 
+        //returns the result bind always returns a value
+        const result=person.fullName.bind(person1,"pune","India")
+        document.getElementById("demo").innerHTML = result;
+        console.log(result)
+
+        console.log(result())
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+Conditional statements are used to perform different actions based on different conditions.
+
+Use if to specify a block of code to be executed, if a specified condition is true
+
+Use else to specify a block of code to be executed, if the same condition is false
+
+Use else if to specify a new condition to test, if the first condition is false
+
+Use switch to specify many alternative blocks of code to be executed
+
+---------------------------------------------------------
+
+
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+If there is no match, the default code block is executed.
+
+
+
+When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+This will stop the execution inside the switch block.
+
+It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+
+The default keyword specifies the code to run if there is no case match:
+
+The default case does not have to be the last case in a switch block:
+
+The getDay() method returns the weekday as a number between 0 and 6.

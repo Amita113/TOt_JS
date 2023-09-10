@@ -1,0 +1,5 @@
+
+which will run after sometime or which will be invoked
+automatically
+The callback function is one of those concepts that every JavaScript developer should know. Callbacks are used in arrays, timer functions, promises, event handlers, and much more.
+

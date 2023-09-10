@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<p>Property access on strings:</p>
+
+<p>The first character in the string is:</p>
+<p id="test3"></p>
+
+<script>
+let text = "HELLO WORLD";
+document.getElementById("test3").innerHTML = text[0];
+
+// Property access might be a little unpredictable:
+
+// It makes strings look like arrays (but they are not)
+// If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+// It is read only. str[0] == "A" gives no error (but does not work!)
+
+</script>
+</body>
+</html>

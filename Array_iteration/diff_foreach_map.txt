@@ -1,0 +1,31 @@
+The map() method returns a new array, whereas the forEach() method does not return a new array. 
+
+The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
+
+
+currentElement: This is the current element that is being processed in the callback.
+
+indexOfElement: The index of that current element inside the array.
+
+array: The array on which the whole operation is being performed.
+
+---------------------------------------------------------
+
+
+
+Differences between forEach() and map() methods:
+
+ 	forEach()	map() 
+1	The forEach() method does not returns a  new array based on the given array.	
+The map() method returns an entirely new array.
+
+2	The forEach() method returns “undefined“.	
+The map() method returns the newly created array according to the provided callback function.
+
+3	The forEach() method doesn’t return anything hence the method chaining technique cannot be applied here. 
+
+	With the map() method, 
+    we can chain other methods like, reduce(),sort() etc.
+
+4.	It is not executed for empty elements.	
+It does not change the original array.

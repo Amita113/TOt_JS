@@ -1,0 +1,82 @@
+An array is a special variable, which can hold more than one value:
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+
+Creating an Array
+Using an array literal is the easiest way to create a JavaScript Array.
+
+Syntax:
+
+const array_name = [item1, item2, ...]; 
+
+---------------------------------------------------------
+
+
+You can also create an array, and then provide the elements:
+
+Eg:
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+
+Array Elements Can Be Objects
+JavaScript variables can be objects. Arrays are special kinds of objects.
+
+Because of this, you can have variables of different types in the same Array.
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+---------------------------------------------------------
+
+Array Properties and Methods
+The real strength of JavaScript arrays are the built-in array properties and methods:
+
+cars.length   // Returns the number of elements
+cars.sort()   // Sorts the array
+
+---------------------------------------------------------
+
+The Difference Between Arrays and Objects
+In JavaScript, arrays use numbered indexes.  
+
+In JavaScript, objects use named indexes.
+
+const person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+person.length;     // Will return 0
+person[0]; 
+
+
+When to Use Arrays. When to use Objects.
+JavaScript does not support associative arrays.
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.
+
+difference between array and object? 
+list of elements 
+key : value
+---------------------------------------------------------
+
+JavaScript new Array()
+JavaScript has a built-in array constructor new Array().
+
+But you can safely use [] instead.
+
+These two different statements both create a new array containing 6 numbers:
+
+const points = new Array(40, 100, 1, 5, 25, 10);
+const points = [40, 100, 1, 5, 25, 10];
+
+primitive: number , 
+non-primitves: which can hold more than one type of 
+
+
+

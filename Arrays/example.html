@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+      // synchronous - it executes line by line
+        const arrone=[12, " ", "XYZ", true]
+        document.getElementById("demo").innerHTML=arrone;
+        console.log(arrone.length);
+        //adding an ele at the end using length prop
+        arrone[arrone.length]=56;
+        console.log(arrone);
+        arrone.shift()
+        console.log(arrone);
+        arrone.unshift(12)
+        console.log(arrone);
+        arrone.push(78);
+        console.log(arrone);
+        arrone.pop(78);
+        console.log(arrone);
+        // delete method add holes in the array index is still present
+        delete arrone[0] 
+        console.log(arrone);
+        
+        for(let i=0;i<arrone.length;i++){
+            
+            console.log(arrone[i]);
+        }
+
+
+    </script>
+</body>
+</html>

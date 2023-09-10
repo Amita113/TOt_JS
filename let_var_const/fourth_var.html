@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var let const</title>
+</head>
+
+<body>
+    <script>
+        // difference between var let anad const
+
+
+        // var:   The scope of the var keyword is the global or function scope.
+
+        // It means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function. 
+
+
+
+        var a = 10
+        function f() {
+            // The variable ‘a’ is declared inside the function. If the user tries to access it outside the function, it will display the error. 
+
+
+            console.log(a)
+        }
+        f();
+        console.log(a);
+
+        // The user can re-declare the variable using var and the user can update the var variable.
+
+
+        // User can re-declare
+        // variable using var
+        var a = 8
+
+        // User can update var variable
+        a = 7
+
+        // If users use the var variable before the declaration, it initializes with the undefined value.
+
+
+        console.log(z);
+        var z = 10;
+
+
+        // let: 
+
+        //The scope of a let variable is only block scoped. It can’t be accessible outside the particular block
+
+
+        let x = 10;
+        function f() {
+            let b = 9
+            console.log(b);
+            console.log(x);
+        }
+        f(); // because of lexical scoping
+
+        //2
+        let y = 10;
+        function f() {
+            if (true) {
+                let b = 9
+
+                // It prints 9
+                console.log(b);
+            }
+
+            // It gives error as it
+            // defined in if block
+            console.log(b);
+        }
+        f()
+
+        // It prints 10
+        console.log(y)
+
+        // 3 Users can declare the variable with the same name in different blocks using the let keyword.
+
+        // If users use the let variable before the declaration, it does not initialize with undefined just like a var variable, and returns an error.
+
+        console.log(p);
+        let p = 100;
+
+
+        // const:The const keyword has all the properties that are the same as the let keyword, except the user cannot update it.
+
+        // Scope: block scoped: When users declare a const variable, they need to initialize it, otherwise, it returns an error. The user cannot update the const variable once it is declared.
+
+        const r = 10;
+        function f() {
+            r = 9
+            console.log(r)
+        }
+        f();
+
+
+
+        var name = "xyz";
+        console.log(name);
+
+        address = "shivajinagar";
+        let address
+
+        marks = 87; // syntax error
+        //const marks;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+BOM is an acronym for Browser Object Model. And when we say browser, we're referring to a window in any browser, such as Firefox, Chrome, or Internet Explorer.
+
+The Browser Object Model (BOM) enables JavaScript to communicate with the browser about things other than the page's content.
+
+
+//1
+The hasOwnProperty() method in JavaScript takes one parameter which is the property that we are testing the object for
+
+//The hasOwnProperty() method is used in JavaScript to check if an object has a property that belongs only to itself
+
+
+
+
+//ref  JavaScript gives web pages interactive elements that engage a user. Common examples of JavaScript that you might use every day include the search box on Amazon, a news recap video embedded on The New York Times, or refreshing your Twitter feed

@@ -1,0 +1,34 @@
+// ES6 introduced a new primitive data type called Symbol. Symbols are immutable (cannot be changed) and are unique
+
+
+// two symbols with the same description
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const value1 = Symbol('hello');
+        const value2 = Symbol('hello');
+        
+        console.log(value1 === value2); // false
+        
+        
+        let id = Symbol("id");
+        
+        let person = {
+            name: "Jack",
+        
+            // adding symbol as a key
+            [id]: 123 // not "id": 123
+        };
+        
+        console.log(person); // {name: "Jack", Symbol(id): 123}
+        
+        </script>
+</body>
+</html>
+

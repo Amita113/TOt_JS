@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The findIndex() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [4,25, 9, 16,  29];
+
+document.getElementById("demo").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+// it displays the first index of the number which passed test
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>

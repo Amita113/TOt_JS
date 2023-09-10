@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The indexOf() Method</h2>
+
+<p>
+    The indexOf() method searches an array for an element value and returns its position.
+    <p>
+        Array.indexOf() returns -1 if the item is not found.
+        
+        If the item is present more than once, it returns the position of the first occurrence.
+    </p>
+</p>
+<p id="demo"></p>
+<script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple");
+let position1 = fruits.lastIndexOf("Apple");
+
+document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+</script>
+<p>
+    JavaScript Array lastIndexOf()
+Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+//function declarations
+
+
+function functionName(parameters) {
+  // code to be executed
+}
+
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon)
+
+A JavaScript function can also be defined using an expression.
+
+A function expression can be stored in a variable:
+
+After a function expression has been stored in a variable, the variable can be used as a function:
+
+The function above is actually an anonymous function (a function without a name).
+
+Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+The arguments.length property returns the number of arguments received when the function was invoked:

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <button id="fetchUsersButton">click</button>
+  <script>
+    
+    //The special keyword async placed before the function definition creates an asynchornous function:
+
+    async function fetchUserNames() {
+      const resp = await fetch('https://api.github.com/users?per_page=5');
+      const users = await resp.json();
+      const names = users.map(({ login }) => login);
+      console.log(names);
+    }
+
+    //fetchUserNames() is asynchronous since it's prefixed with async. The function fetches await fetch('https://api.github.com/users?per_page=5') first 5 users from GitHub. Then extracts from the response object the JSON data: await resp.json().
+
+    //The asynchronous functions are syntactic sugar on top of promises. When encountering the expression await <promise> (note that calling fetch() returns a promise), the asynchronous function pauses its execution until the promise is resolved.
+
+    //An asynchronous callback function and an asynchronous function are different terms.
+
+    // The asynchronous callback function is executed in a non-blocking manner by the higher-order function. But the asynchronous function pauses its execution while waiting for promises (await <promise>) to resolve.
+
+    // However... you can use an asynchronous function as an asynchronous callback!
+
+    // Let's make the asynchornous function fetchUserNames() an asynchronous callback called on button click: 
+
+    const button = document.getElementById('fetchUsersButton');
+
+    button.addEventListener('click', fetchUserNames);
+  </script>
+
+
+  <p>The callback is a function that's accepted as an argument and executed by another function (the higher-order
+    function).
+
+  <p>There are 2 kinds of callback functions: synchronous and asynchronous.</p>
+  <p>
+    The synchronous callbacks are executed at the same time as the higher-order function that uses the callback.
+    Synchronous callbacks are blocking.</p>
+  <p>
+    On the other side, the asynchronous callbacks are executed at a later time than the higher-order function.
+    Asynchronous callbacks are non-blocking.
+  </p>
+  </p>
+
+  <p>
+    "async and await make promises easier to write"
+
+    async makes a function return a Promise
+
+    await makes a function wait for a Promise
+  </p>
+</body>
+
+</html>

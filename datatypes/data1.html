@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // primitive and non-primitive datatype
+ // datatype is the type of the vale stored in a variable
+//primitive
+
+let num = 56; // number
+console.log(num);
+let name= "xyz" // string
+console.log(name);
+let year= true //boolean
+console.log(year);
+let marks; // undefined just declared but assigned anything
+console.log(marks);
+let time = " ";//null
+console.log(time);
+
+// non primitive datatypes
+
+//array have index always start from 0, length is property
+var person = [10,"pune",false]
+console.log(person);
+console.log(person[1]);
+//object have key: value pairs , functions created inside obj are called methods
+
+// we can use string interpolation on varaible but not objects we have to use this
+var student ={
+name:"john",
+rollno:24,
+school:"xyz",
+result: function(){
+    return this.name + " from " + this.school +" has scored good marks "
+}
+}
+student.name
+// console.log(student);
+console.log(student.result());
+
+
+// operators: 
+
+// let var const  : reference caught, syntax error, 
+
+// datatypes: arrays  abjects;
+
+
+    </script>
+</body>
+</html>

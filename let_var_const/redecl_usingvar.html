@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclaring a Variable Using var</h2>
+
+<p id="demo"></p>
+
+<script>
+    // explain scenario of var and let es6
+var  x = 10;
+
+// console.log(x)
+// Here x is 10
+ 
+{  
+     x=2;
+     let x;
+    console.log(x)
+
+    // let x = 2;
+     
+    // c=5;
+    const c=8;
+    c=9;
+// Here x is 2
+}
+
+// Here x is 2
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<p>
+    the problem is when we redeclare a variable with var inside a block it changes every where.
+
+    Redeclaring a variable using the let keyword can solve this problem.
+
+    Redeclaring a variable inside a block will not redeclare the variable outside the block:</p>
+    
+</body>
+</html>

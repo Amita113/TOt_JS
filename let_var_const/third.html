@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         // difference between  var let and const
+//         //global
+// var num=10;
+// // var total= num+num1
+// //  console.log(total);
+// // console.log(num);
+// // let const
+// function mul(){
+//     let num1 =20
+//     return multiply= num*num1;
+//     // console.log(multiply)
+// }
+// mul();
+// console.log(multiply)
+
+// let a , b=30;
+// let sum =a+b;
+// console.log(sum);
+
+
+var a=10;
+console.log("The value of variable a is global scope :" + a)
+
+{
+    var a = 30;
+    console.log( "The value of variable a is block scope :" + a)
+}
+
+let b=20;
+console.log("The value of variable with let b in global scope :" + b)
+{
+    let b=40;
+    //  b=40;
+    //  let b
+    //redeclaration of let varaible
+    // let b=60;
+     b=120;
+    //update a value  of let variable is possible
+    console.log( "The value of variable with let b in block scope :" + b)
+}
+
+// c= 50;
+// const c;
+const c = 50;
+// const c = 40;
+//Uncaught SyntaxError: missing = in const declaration
+console.log( "The value of variable with const c in global scope :" + c)
+{
+    const c =60;
+    console.log( "The value of variable with const c in global scope :" + c)
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+JavaScript has 8 Datatypes
+1. String character "pune"
+2. Number limit 22
+3. Bigint 
+4. Boolean true or false
+5. Undefined var xyz;
+6. Null  var z=" "
+7. Symbol ES6
+
+ With BigInts, you can safely store and operate on large integers even beyond the safe integer limit
+
+JavaScript Symbols
+JavaScript Symbols are a new type of primitive data type introduced in the ES6 version of the language. They are used to represent unique values that can be used as identifiers or keys in objects. They are also used to create private properties and methods in classes.
+
+Why should you use it?
+Symbols are unique and immutable, so they can be used as unique identifiers in objects and classes.
+Symbols can be used to create private properties and methods in classes.
+Symbols are useful for creating constants that can be shared across different parts of your code.
+
+
+non-primitive
+
+1. An object 
+2. An array
+3. A date
+
+
+What are primitive and non-primitive data structure?
+Primitive vs non-primitive data structure | What's the ...
+Primitive data structure. Non-primitive data structure.
+
+ Primitive data structure is a kind of data structure that stores the data of only one type. Non-primitive data structure is a type of data structure that can store the data of more than one type
+
+null : It means that the object is empty and isn't pointing to any memory address
+
+
+
+
+https://playcode.io/javascript/symbols

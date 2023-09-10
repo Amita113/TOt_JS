@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method merges (concatenates) arrays:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+    //merging two strings 
+    //concat method always creates a new array. 
+    //And can merge any number of arrays in to one.
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+const child=myGirls.concat("pqr")
+document.getElementById("demo").innerHTML = myChildren;
+document.getElementById("demo2").innerHTML = child;
+const arr3 = ["Robin", "Morgan"];
+ const arr2 = ["Emil", "Tobias", "Linus"];
+ const arr1 = ["Emil1", "Tobias2", "Linus3"];
+const myChildren1 = arr1.concat(arr2, arr3);
+document.getElementById("demo3").innerHTML = myChildren1;
+
+// Example (Merging an Array with Values)
+// const arr1 = ["Emil", "Tobias", "Linus"];
+// const myChildren = arr1.concat("Peter"); 
+
+
+
+</script>
+
+</body>
+</html>

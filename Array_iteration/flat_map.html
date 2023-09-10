@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flatMap() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+const newArr = myArr.flatMap((x) => x * 2);
+document.getElementById("demo").innerHTML = newArr;
+</script>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+  
+// Taking input as an array A having some elements.
+const arr3 = [1, 2, [4, 5], 6, 7, [8]] ;
+const arr4=arr3.flatMap((element) => element)
+console.log(arr4); 
+document.getElementById("demo1").innerHTML=arr4;
+// expected output 
+// [1, 2, 4, 5, 6, 7, 8]
+</script>
+
+</body>
+</html>

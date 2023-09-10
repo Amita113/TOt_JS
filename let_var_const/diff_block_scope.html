@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+let name = "Abhijit";
+var sector = "Government";
+  const b ="x";
+  // we caannot redecalre a const variable in a block 
+  // const b="p";
+  console.log(b)
+{
+  let name = "Souvik";
+    console.log(b)
+  // as `var` is NOT block scoped(globally s
+  // coped here), it'll update the value
+  var sector = "Private"; 
+  console.log(name); //Souvik
+  console.log(sector); //Private
+}
+console.log(name); //Abhijit
+console.log(sector); //Private
+
+
+
+//------------------------------------------------------
+
+
+// let name = "Abhijit";
+// var sector = "Government";
+  
+// function showDetails() {
+//   let name = "Souvik";
+  
+//   // `var` is functionally scoped here,
+//   // so it'll create new reference with 
+//   // the given value for organization
+//   var sector = "Private";
+//   console.log(name); // Souvik
+//   console.log(sector); // Private
+// }
+  
+// showDetails();
+// console.log(name); // Abhijit
+// console.log(sector); // Government
+
+  </script>
+</body>
+</html>
+

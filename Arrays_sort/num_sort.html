@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The sort() Method</h2>
+
+<p>Sort the array in ascending order:</p>
+
+<p>The compare function should return a negative, zero, or positive value, depending on the arguments:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo5"></p>
+
+<p>if the result is negative, a is sorted before b.If the result is positive, b is sorted before a.
+If the result is 0, no changes are done with the sort order.</p>
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = points;  
+
+points.sort(
+    function(a, b){
+    return a - b
+});
+document.getElementById("demo2").innerHTML = points;
+points.reverse()
+document.getElementById("demo5").innerHTML = points
+// document.getElementById("demo3").innerHTML=points[0];
+// document.getElementById("demo4").innerHTML=points[points.length-1];
+</script>
+<script>
+
+    // now points[0] contains the lowest value
+// and points[points.length-1] contains the highest value
+</script>
+
+<p>Find the Highest (or Lowest) Array Value
+    There are no built-in functions for finding the max or min value in an array.
+    
+    However, after you have sorted an array, you can use the index to obtain the highest and lowest values.
+     points[0] contains the lowest value
+    points[points.length-1] contains the highest value
+</p>
+
+</body>
+</html>

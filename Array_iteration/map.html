@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The map() Method</h2>
+
+<p>Create a new array by performing a function on each array element:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+</script>
+
+
+<hr>
+<br>
+<br>
+<hr>
+<p id="test1"></p>
+<script>
+     let myArray = [1, 2, 3, 4];
+      
+      const returnValue = myArray.forEach((element) => {
+          return element * element;
+      });
+      document.getElementById("test1").innerHTML=returnValue
+      console.log(returnValue);
+    </script>
+<p id="test2"></p>
+<script>
+    
+    let myArray1 = [1, 2, 3, 4];
+    
+    const returnValue1 = myArray1.map((element) => {
+        return element * element;
+    })
+ document.getElementById("test2").innerHTML=returnValue1
+    console.log(returnValue1);
+</script>
+
+</body>
+</html>

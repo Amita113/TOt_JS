@@ -1,0 +1,173 @@
+Introduction to Javascript
+
+what can JS do yesterday we covered
+
+Ways to add/ insert js to Html(head, body, external file, external url, external
+ folder)
+
+javascript output can be shown in these Ways
+
+Writing in to Html document.write
+Writing in to Html innerHtml element
+writing in to window alert box
+wrirting in to browser console
+
+javascript syntax:
+
+js statements
+ can be separated with ,
+
+programs-- instructions--statements--expressions
+ variables
+
+x=(a+10)+c
+ operators
+
+ An expression is a combination of values, variables, and operators, which computes to a value.
+
+ statements :
+
+ list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+JavaScript statements are composed of:
+
+Values, Operators, Expressions, Keywords, and Comments.
+
+JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+
+Comments
+
+//
+/*  */ multiline comments
+
+---------------------------------------------------
+
+Identifiers are used to name variables arrays, objects and functions
+
+A JavaScript name must begin with:
+
+A letter (A-Z or a-z)
+A dollar sign ($)
+Or an underscore (_) 
+
+JavaScript is Case Sensitive
+All JavaScript identifiers are case sensitive. 
+
+The variables lastName and lastname, are two different variables
+
+The Assignment Operator
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+
+The "equal to" operator is written like == in JavaScript
+
+defined an  object --properties and methods and called
+
+SI function defined 
+--------------------------------
+what are reserved words in JS (keywords)
+what is the difference between variables and identifiers
+
+Identifiers are JavaScript names.
+
+Identifiers are used to name variables and functions.
+
+JavaScript keywords are used to identify actions to be performed.
+
+The let keyword tells the browser to create variables:
+
+
+
+Constant Objects and Arrays
+The keyword const is a little misleading.
+
+It does not define a constant value. It defines a constant reference to a value.
+
+Because of this you can NOT:
+
+Reassign a constant value
+Reassign a constant array
+Reassign a constant object
+But you CAN:
+
+Change the elements of constant array
+Change the properties of constant object
+-------------------------------------
+
+Why we need to bind event handlers to this ?
+We use the Bind() method to call a function with this value, this keyword refers to the same object which is currently selected. In other words, the bind() method allows us to easily set which object will be bound by this keyword when a function or method is invoked
+--------------------------------------
+
+Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+
+The block of code is aware of the variable, but it cannot be used until it has been declared.
+
+Using a let variable before it is declared will result in a ReferenceError.
+
+The variable is in a "temporal dead zone" from the start of the block until it is declared:
+
+Example
+This will result in a ReferenceError:
+carName = "Volvo";
+let carName;
+
+
+------------------------------------
+
+Types of JavaScript Operators
+There are different types of JavaScript operators:
+
+Arithmetic Operators ()a + b
+Assignment Operators =
+Comparison Operators <=, >=
+String Operators +(concatination operators)
+Logical Operators && || !=
+Bitwise Operators 
+Ternary Operators ? :
+Type Operators typeof
+
+
+// assignment: try for var and let and show a scenario where it is needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+interview
+
+
+null : It means that the object is empty and isn't pointing to any memory address
+
+
+https://www.scaler.com/topics/javascript/null-and-undefined-in-javascript/

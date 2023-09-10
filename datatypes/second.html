@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- today how to display output in a doc -->
+    <h1 id="one"> this is first element </h1>
+    <script>
+        // single line
+        /*multi line */
+        document.write("welcome to Second dya session");
+        document.getElementById('one').innerHTML =
+            "Yes i say it";
+        var a = 10, b = 20, c = a + b;
+        console.log(c)
+// alert("is good to see you")
+    </script>
+
+    <p id='two'> </p>
+    <script>
+        // we have to define the element before calling in script 
+        const person = {
+            name: "xyz",
+            age: 24,
+            identity: function () {
+                return "my name is " + this.name
+            }
+        }
+        document.getElementById('two').innerHTML = person.identity(); 
+    </script>
+
+
+    <script>
+        const arr1 = ["abc", 25, true]
+        console.log(arr1);
+        arr1.push(2023)
+        console.log(arr1);
+
+    </script>
+
+    <script>
+        /* 
+        differences between let var and const
+        
+        var is a global scope, let and const are block scope
+        we cannot use a variable before declaring it with let and const
+        
+        reference error , syntax error
+        
+        */
+        var x = 20; // global
+        console.log(x);
+        y = 5; //block function
+        let y // declare first , we cannot redeclare a let variable
+
+        console.log(y);
+    </script>
+    <p id="obj1"></p>
+    <script>
+        // this is a student object
+        let student = {
+            name: "xyz",
+            rollno: 34,
+            //method
+            reading: function () { return(this.name +" is reading ")}
+        }
+
+        document.write(
+        student.name + " ",
+        student.rollno + " ",
+       student.reading()
+        )
+        document.getElementById("obj1").innerHTML=student.reading();
+    </script>
+<script>
+// array which as well holds multiple datatypes
+
+let arrone = [10,"pqr",true,Date()];
+console.log(arrone)
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flat() Method</h2>
+
+<p id="demo"></p>
+<p id="test"></p>
+<p id="test1"></p>
+<p>Flattening an Array
+    Flattening an array is the process of reducing the dimensionality of an array.
+    
+    The flat() method creates a new array with sub-array elements concatenated to a specified depth.</p>
+<script>
+const myArr = [[1,2,2],[3,4,2],[5,6,2]];
+
+const newArr = myArr.flat();
+document.getElementById("demo").innerHTML = newArr;
+
+
+const arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat();
+console.log(arr2)
+const arr6 = [1, 2, [3, 4, [5, [6,9]]]];
+arr6.flat(2);
+// console.log(arr6)
+document.getElementById("test").innerHTML=arr6
+// [1, 2, 3, 4, [5, 6]]
+
+const arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2);
+document.getElementById("test1").innerHTML=arr3
+// [1, 2, 3, 4, 5, 6]
+
+const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+arr4.flat(Infinity);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</script>
+
+
+
+</body>
+</html>

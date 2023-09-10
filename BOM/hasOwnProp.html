@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            "Demonstration of hasOwnProperty in Javascript."
+        </title>
+    </head>
+    <body>
+        <script>
+            var coding_ninjas = {  
+                name: 'Coding Ninjas Studio',  
+                vertical: 'resource',  
+            }  
+            var intern = {  
+                name: 'XYZ',  
+            }  
+            document.write(coding_ninjas.hasOwnProperty('name'));
+            document.write("<br>");
+            document.write(coding_ninjas.hasOwnProperty('vertical'));
+            document.write("<br>");  
+            document.write(intern.hasOwnProperty('name'));
+            document.write("<br>");  
+            document.write(intern.hasOwnProperty('role'));  
+        </script>
+    </body>
+</html>
